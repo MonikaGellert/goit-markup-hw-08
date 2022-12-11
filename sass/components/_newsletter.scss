@@ -1,0 +1,21 @@
+.newsletter {
+  &__box {
+    display: inline;
+    width: 570px;
+    height: 86px;
+    margin-left: 78px;
+    padding-top: 12px;
+  }
+  &__join {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    padding-top: 60px;
+  }
+}

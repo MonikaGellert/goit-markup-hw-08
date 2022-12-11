@@ -1,0 +1,23 @@
+.btn__2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  border: 0px;
+  width: 114px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--icone_background);
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, fill;
+
+  &:hover {
+    color: var(--main-font-color);
+    background-color: var(--main-underline-color);
+  }
+}

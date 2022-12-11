@@ -1,0 +1,41 @@
+.modal {
+  &__window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, box-shadow;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px 40px 30px 40px;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .modal__window {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    @include transition(scale, opacity);
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .modal__window {
+    width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    @include transition(scale, opacity);
+  }
+}
