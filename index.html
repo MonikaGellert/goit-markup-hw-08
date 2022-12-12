@@ -71,49 +71,7 @@
           </ul>
         </div>
       </div>
-      <button type="button" class="btn__menu-mobile" aria-expanded="false" data-menu-button>
-        <svg class="icon-menu_40px" width="40" height="40" aria-label="Przełącznik menu">
-          <use class="btn__menu--cross" href="./images/icon.svg#icon-menu_40px"></use>
-          <use class="btn__menu--burger" href="./images/icon.svg#icon-menu_40px"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="header__menu-mobile" data-menu>
-      <nav class="navigation-menu">
-        <ul class="list-menu">
-          <li class="list-menu__item">
-            <a href="./index.html" class="list-menu__link">Agencja</a>
-          </li>
-          <li class="list-menu__item">
-            <a href="./portfolio.html" class="list-menu__link">Portfolio</a>
-          </li>
-          <li class="list-menu__item">
-            <a href="/contacts.html" class="list-menu__link">Kontakty</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="menu__contacts">
-        <a href="tel:+48111111111" class="menu__contacts--link menu__contacts--tel">
-          <span>+48 111 111 111</span></a>
-        <a href="mailto:info@devstudio.com" class="menu__contacts--link menu__contacts--email">
-          <span>info@devstudio.com</span></a>
-        <ul class="menu_-mobile__social">
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">Instagram</a>
-          </li>
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">Twitter</a>
-          </li>
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">Facebook</a>
-          </li>
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">LinkedIn</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal__window">
@@ -172,7 +130,7 @@
         <h1 class="hero__h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button data-modal-open class="hero__btn" type="button">Zamów usługę</button>
       </section>
-      <section class="lorem section container">
+      <section class="lorem__container section">
         <ul class="container li-item">
           <li>
             <div class="lorem__icon-box container">
@@ -284,7 +242,7 @@
           </li>
         </ul>
       </section>
-      <section class="our_team section">
+      <section class="our_team__container section">
         <h2 class="our_work__header header_2">Nasz zespół</h2>
         <ul class="our_work__picture container">
           <li>
@@ -299,7 +257,7 @@
                 <h4 class="lorem__h4 text_font">Jon Doe</h4>
                 <p class="lorem__p text_font">Product Designer</p>
                 <ul>
-                  <div class="social_media__box">
+                  <div class="social__media--box">
                     <li>
                       <span class="social_media__icon">
                         <a href="https://www.instagram.com/">
@@ -379,7 +337,7 @@
                 <h4 class="lorem__h4 text_font">Jon Doe</h4>
                 <p class="lorem__p text_font">Frontend Developer</p>
                 <ul>
-                  <div class="social_media__box">
+                  <div class="social__media--box">
                     <li>
                       <span class="social_media__icon">
                         <a href="https://www.instagram.com/">
@@ -462,7 +420,7 @@
                 <h4 class="lorem__h4 text_font">Jon Doe</h4>
                 <p class="lorem__p text_font">Marketing</p>
                 <ul>
-                  <div class="social_media__box">
+                  <div class="social__media--box">
                     <li>
                       <span class="social_media__icon">
                         <a href="https://www.instagram.com/">
@@ -544,9 +502,9 @@
                 <h4 class="lorem__h4 text_font">Jon Doe</h4>
                 <p class="lorem__p text_font">Ul Designer</p>
                 <ul>
-                  <div class="social_media__box">
+                  <div class="social__media--box">
                     <li>
-                      <span class="social__media-icon">
+                      <span class="social_media__icon">
                         <a href="https://www.instagram.com/">
                           <svg class="social_media__icon" id="icon_instagram">
                             <use
@@ -712,7 +670,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer__container">
       <div class="container flex">
         <div>
           <p class="footer__logo footer__nav">
@@ -733,7 +691,7 @@
             <ul class="footer__flex">
               <li>
                 <span>
-                  <a href="https://www.instagram.com/">
+                  <a class="icon__social" href="https://www.instagram.com/">
                     <svg class="footer__social-icon">
                       <use
                         href="./images/icons.svg#icon_instagram"
@@ -749,7 +707,7 @@
               </li>
               <li>
                 <span>
-                  <a href="https://twitter.com/">
+                  <a class="icon__social" href="https://twitter.com/">
                     <svg class="footer__social-icon" id="icon_twitter">
                       <use
                         href="./images/icons.svg#icon_twitter"
@@ -765,7 +723,7 @@
               </li>
               <li>
                 <span>
-                  <a href="https://www.facebook.com/">
+                  <a class="icon__social" href="https://www.facebook.com/">
                     <svg class="footer__social-icon" id="icon_facebook">
                       <use
                         href="./images/icons.svg#icon_facebook"
@@ -781,7 +739,7 @@
               </li>
               <li>
                 <span>
-                  <a href="https://pl.linkedin.com/">
+                  <a class="icon__social" href="https://pl.linkedin.com/">
                     <svg class="footer__social-icon" id="icon_linkedin">
                       <use
                         href="./images/icons.svg#icon_linkedin"

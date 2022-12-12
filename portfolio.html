@@ -10,14 +10,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+
   <body>
     <header class="header container">
       <div class="header__items">
         <div class="header__nav">
           <a href="index.html"
-            ><span class="logo">Web</span><span class="logo_2">Studio</span></a
+            ><span class="logo">Web</span><span class="logo__2">Studio</span></a
           >
           <nav>
             <ul>
@@ -540,7 +541,7 @@
           <p class="footer__logo footer__nav">
             <a href="index.html"
               ><span class="logo">Web</span
-              ><span class="logo_3">Studio</span></a
+              ><span class="logo__3">Studio</span></a
             >
           </p>
           <address>Warszawa, Aleje Jerozolimskie 21</address>
@@ -554,8 +555,8 @@
           <div class="footer__social--box">
             <ul class="footer__flex">
               <li>
-                <span class="footer__social-icon">
-                  <a href="https://www.instagram.com/">
+                <span>
+                  <a class="icon__social" href="https://www.instagram.com/">
                     <svg class="footer__social-icon">
                       <use
                         href="./images/icons.svg#icon_instagram"
@@ -570,8 +571,8 @@
                 </span>
               </li>
               <li>
-                <span class="footer__social-icon">
-                  <a href="https://twitter.com/">
+                <span>
+                  <a class="icon__social" href="https://twitter.com/">
                     <svg class="footer__social-icon" id="icon_twitter">
                       <use
                         href="./images/icons.svg#icon_twitter"
@@ -586,8 +587,8 @@
                 </span>
               </li>
               <li>
-                <span class="footer__social-icon">
-                  <a href="https://www.facebook.com/">
+                <span>
+                  <a class="icon__social" href="https://www.facebook.com/">
                     <svg class="footer__social-icon" id="icon_facebook">
                       <use
                         href="./images/icons.svg#icon_facebook"
@@ -602,16 +603,14 @@
                 </span>
               </li>
               <li>
-                <span class="footer__social-icon">
-                  <a href="https://pl.linkedin.com/">
+                <span>
+                  <a class="icon__social" href="https://pl.linkedin.com/">
                     <svg class="footer__social-icon" id="icon_linkedin">
                       <use
                         href="./images/icons.svg#icon_linkedin"
                         width="40"
                         height="40"
                         viewBox="0 0 32 32"
-                        x="4"
-                        y="3"
                       ></use>
                     </svg>
                   </a>
@@ -620,36 +619,26 @@
             </ul>
           </div>
         </div>
-        <div class="newsletter__box">
-          <p class="newsletter__join">Zapisz się do newslettera</p>
-          <form name="email">
-            <label for="email">
-              <input
-                class="input__email"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="btn__sign-in" type="submit">
-              <span class="sign-in"
-                ><p class="sign-in-text">Zapisz się</p>
-                <a href="#"></a>
-                <svg class="icon__send" id="icon__send">
-                  <use
-                    href="./images/icons.svg#icon__send"
-                    width="22"
-                    height="22"
-                    x="0"
-                    y="0"
-                    viewBox="0 0 32 32"
-                  ></use>
-                </svg>
-              </span>
-            </button>
-          </form>
-        </div>
+          <div class="newsletter__box">
+            <p class="newsletter__join"> Zapisz się do newslettera</p>
+            <form name="email">
+              <label for="email">
+                   <input class=input__email type="email" name="email" id="email" placeholder=E-mail>
+              </label>
+     <button class="btn__sign-in" type="submit">
+       <span class="sign-in"><p class="sign-in__text"> Zapisz się</p>
+       <a href="#"></a>
+       <svg class="icon__send" id="icon__send">
+         <use href="./images/icons.svg#icon__send" 
+         width="22"
+         height="22"
+         x="0"
+         y="0"
+         viewBox="0 0 32 32"
+         ></use></svg></span>
+     </button>
+            </form>
+           </div>
       </div>
     </footer>
   </body>
