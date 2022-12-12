@@ -1,0 +1,15 @@
+.icon__envelope {
+  display: flex;
+  margin-right: 5px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  &:focus {
+    color: var(--main-underline-color);
+    fill: var(--main-underline-color);
+  }
+  &:hover {
+    color: var(--main-underline-color);
+    fill: var(--main-underline-color);
+  }
+}

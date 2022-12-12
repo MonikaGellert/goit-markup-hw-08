@@ -1,0 +1,16 @@
+.header {
+  border-bottom: 1px solid #eeeeee;
+
+  &__items {
+    display: flex;
+    color: var(--secondary-text-color);
+    margin: 0 auto;
+    max-width: 1200;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+  }
+}
