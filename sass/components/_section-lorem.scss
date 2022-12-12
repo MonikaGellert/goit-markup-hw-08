@@ -1,19 +1,6 @@
-.lorem__container {
-  display: block;
+.lorem {
+  display: flex;
   background-color: #ffffff;
-  width: 100%;
-  padding: 15px;
-  @media (min-width: 480px) {
-    max-width: 450px;
-  }
-  @media (min-width: 768px) {
-    max-width: 738px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-    display: flex;
-    gap: 30px;
-  }
 }
 
 .lorem__p {
@@ -27,31 +14,12 @@
 }
 
 .lorem__icon-box {
+  width: 270px;
+  height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  height: 120px;
-  display: flex;
-  gap: 30px;
-  @media (min-width: 480px) {
-    max-width: 450px;
-    width: 450px;
-    height: 120px;
-
-    margin-left: 15px;
-  }
-  @media (min-width: 768px) {
-    max-width: 738px;
-    width: 354px;
-    margin-left: 15px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-
-    width: 270px;
-    height: 120px;
-    margin-left: 20px;
-  }
+  margin-left: 20px;
 }
 
 .text_font {
