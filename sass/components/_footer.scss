@@ -48,17 +48,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
   }
-
   &__social--box {
     display: inline-block;
     flex-direction: row;
     height: 44px;
     gap: 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__social-icon {
-    text-align: left;
   }
 }
 .footer__social-icon:hover,
@@ -78,4 +72,21 @@
 .footer__flex {
   display: flex;
   gap: 10px;
+}
+.footer__container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  @media (min-width: 480px) {
+    max-width: 450px;
+  }
+  @media (min-width: 768px) {
+    width: 738px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+  }
 }
