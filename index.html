@@ -70,6 +70,48 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="btn__menu-mobile" aria-expanded="false" data-menu-button>
+        <svg class="icon-menu_40px" width="40" height="40" aria-label="Przełącznik menu">
+          <use class="btn__menu--cross" href="./images/icon.svg#icon-menu_40px"></use>
+          <use class="btn__menu--burger" href="./images/icon.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__menu-mobile" data-menu>
+      <nav class="navigation-menu">
+        <ul class="list-menu">
+          <li class="list-menu__item">
+            <a href="./index.html" class="list-menu__link">Agencja</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="./portfolio.html" class="list-menu__link">Portfolio</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="/contacts.html" class="list-menu__link">Kontakty</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menu__contacts">
+        <a href="tel:+48111111111" class="menu__contacts--link menu__contacts--tel">
+          <span>+48 111 111 111</span></a>
+        <a href="mailto:info@devstudio.com" class="menu__contacts--link menu__contacts--email">
+          <span>info@devstudio.com</span></a>
+        <ul class="menu_-mobile__social">
+          <li class="menu-mobile__social--item">
+            <a class="menu-mobile__social--link" href="#">Instagram</a>
+          </li>
+          <li class="menu-mobile__social--item">
+            <a class="menu-mobile__social--link" href="#">Twitter</a>
+          </li>
+          <li class="menu-mobile__social--item">
+            <a class="menu-mobile__social--link" href="#">Facebook</a>
+          </li>
+          <li class="menu-mobile__social--item">
+            <a class="menu-mobile__social--link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
       </div>
     </header>
     <main>
@@ -223,6 +265,7 @@
             <label class="our_work__label label__primary"> Aplikacje komputerowe</label>
           </li>
           <li class="our_work__picture">
+            
             <img
               src="images/photo_2.jpg"
               alt="programowanie aplikacji na telefon"
@@ -247,6 +290,32 @@
         <ul class="our_work__picture container">
           <li>
             <figure class="our_team__box">
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo_4mobile@1x,jpg,
+                    ./images/photo_4mobile@x2.jpg
+                  "
+                  type="image"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo_4tablet@1x.jpg 1x,
+                    ./images/photo_4tablet@2x.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./imgages/photo_4comp@1x.jpg   1x,
+                    ./imgages/photo_4comp@x2.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <img
                 src="images/photo_4.jpg"
                 alt="brunet w okularach w koszuli"
@@ -327,6 +396,32 @@
           </li>
           <li>
             <figure class="our_team__box">
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo_5mobile@1x,jpg,
+                    ./images/photo_5mobile@x2.jpg
+                  "
+                  type="image"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo_5tablet@1x.jpg 1x,
+                    ./images/photo_5tablet@2x.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./imgages/photo_5comp@1x.jpg   1x,
+                    ./imgages/photo_5comp@x2.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <img
                 src="images/photo_5.jpg"
                 alt="blondynka w okularach"
@@ -409,6 +504,32 @@
           </li>
           <li>
             <figure class="our_team__box">
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo_6mobile@1x,jpg,
+                    ./images/photo_6mobile@x2.jpg
+                  "
+                  type="image"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo_6tablet@1x.jpg 1x,
+                    ./images/photo_6tablet@2x.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./imgages/photo_6comp@1x.jpg   1x,
+                    ./imgages/photo_6comp@x2.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <img
                 src="images/photo_6.jpg"
                 alt="szatyn w koszuli"
@@ -492,6 +613,32 @@
           </li>
           <li>
             <figure class="our_team__box">
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo_7mobile@1x,jpg,
+                    ./images/photo_7mobile@x2.jpg
+                  "
+                  type="image"
+                  media="(min-width: 480px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo_7tablet@1x.jpg 1x,
+                    ./images/photo_7tablet@2x.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./imgages/photo_7comp@1x.jpg   1x,
+                    ./imgages/photo_7comp@x2.jpg 2x
+                  "
+                  type="image"
+                  media="(min-width: 1200px)"
+                />
+              </picture>
               <img
                 src="images/photo_7.jpg"
                 alt="brunet w okularach w t-shircie"
