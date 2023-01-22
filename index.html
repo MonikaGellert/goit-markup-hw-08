@@ -17,12 +17,35 @@
     <script src="./js/modal.js"></script>
   </head>
   <body>
+    <!--HEADER-->
     <header class="header container">
       <div class="header__items">
         <div class="header__nav">
           <a href="index.html"
             ><span class="logo">Web</span><span class="logo__2">Studio</span></a
           >
+          <!--BUTTON_MOBILE-->
+       
+          
+          <button
+          class="header__menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
           <nav>
             <ul class="nav">
               <li>
@@ -36,8 +59,7 @@
               </li>
             </ul>
           </nav>
-        </div>
-        <div class="flex">
+          <div class="flex">
           <ul class="contacts__container">
             <li>
               <a class="link contacts__container--item" href="tel:+48111111111">
@@ -70,51 +92,12 @@
               >
             </li>
           </ul>
+          </div>
         </div>
-        <button type="button" class="btn__menu-mobile" aria-expanded="false" data-menu-button>
-        <svg class="icon-menu_40px" width="40" height="40" aria-label="Przełącznik menu">
-          <use class="btn__menu--cross" href="./images/icon.svg#icon-close_40px"></use>
-          <use class="btn__menu--burger" href="./images/icon.svg#icon-menu_40px"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="header__menu-mobile" data-menu>
-      <nav class="navigation-menu">
-        <ul class="list-menu">
-          <li class="list-menu__item">
-            <a href="./index.html" class="list-menu__link">Agencja</a>
-          </li>
-          <li class="list-menu__item">
-            <a href="./portfolio.html" class="list-menu__link">Portfolio</a>
-          </li>
-          <li class="list-menu__item">
-            <a href="/contacts.html" class="list-menu__link">Kontakty</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="menu__contacts">
-        <a href="tel:+48111111111" class="menu__contacts--link menu__contacts--tel">
-          <span>+48 111 111 111</span></a>
-        <a href="mailto:info@devstudio.com" class="menu__contacts--link menu__contacts--email">
-          <span>info@devstudio.com</span></a>
-        <ul class="menu_-mobile__social">
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">Instagram</a>
-          </li>
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">Twitter</a>
-          </li>
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">Facebook</a>
-          </li>
-          <li class="menu-mobile__social--item">
-            <a class="menu-mobile__social--link" href="#">LinkedIn</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-      </div>
-    </header>
+        </div>
+  
+    
+    <!--MODAL_WINDOW-->
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal__window">
@@ -169,14 +152,17 @@
         </div>
       </form>
       </div>
+      <!--HERO_SECTION-->
       <section class="hero">
         <h1 class="hero__h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button data-modal-open class="hero__btn" type="button">Zamów usługę</button>
       </section>
-      <section class="lorem__container section">
-        <ul class="container li-item">
+
+      <!--LOREM_SECTION-->
+      <section class="lorem__container section container">
+        <ul class=" li-item">
           <li>
-            <div class="lorem__icon-box container">
+            <div class="lorem__icon-box">
               <svg
                 class="icons"
                 width="70"
@@ -207,6 +193,7 @@
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
             </div>
+            <div>
             <h4 class="lorem__h4 li-item">Lorem Ipsum</h4>
             <p class="lorem__p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -253,8 +240,10 @@
           </li>
         </ul>
       </section>
+      <!--OUR_WORK-->
       <section class="container our_work">
         <h2 class="our_work__header">Czym się zajmujemy</h2>
+    <br/>>
         <ul>
           <li class="our_work__picture">
             <img
@@ -286,46 +275,30 @@
           </li>
         </ul>
       </section>
+
+      <!--OUR_TEAM-->
       <section class="our_team__container section">
         <h2 class="our_team__header header_2">Nasz zespół</h2>
         <ul class="our_team__picture container">
           <li>
             <figure class="our_team__box">
-              <picture>
-                <source
-                  srcset="
-                    ./images/photo_4mobile@1x,jpg,
-                    ./images/photo_4mobile@x2.jpg
-                  "
-                  type="image"
-                  media="(min-width: 480px)"
-                />
-                <source
-                  srcset="
-                    ./images/photo_4tablet@1x.jpg 1x,
-                    ./images/photo_4tablet@2x.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 768px)" width:450px, height:460px;
-                />
-                <source
-                  srcset="
-                    ./imgages/photo_4comp@1x.jpg   1x,
-                    ./imgages/photo_4comp@x2.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 1200px)"
-                />
-              </picture>
               <img
-                src="images/photo_4.jpg"
+              src="images/photo_4.jpg"
+
+                    srcset="
+                    ./images/photo_4mobile@1x,jpg 270w,
+                    ./images/photo_4mobile@x2.jpg 540w,
+                    ./images/photo_4tablet@1x.jpg 354w,
+                    ./images/photo_4tablet@2x.jpg 768w,
+                    ./imgages/photo_4comp@1x.jpg 450w,
+                    ./imgages/photo_4comp@x2.jpg 900w,
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 765px) 354px, (min-width: 468px) 450px, 98vw"
                 alt="brunet w okularach w koszuli"
-                width="270px"
-                height="260px"
               />
               <figcaption>
-                <h4 class="lorem__h4 text_font">Jon Doe</h4>
-                <p class="lorem__p text_font">Product Designer</p>
+                <h4 class="our_team__h4 text_font">Jon Doe</h4>
+                <p class="our_team__p text_font">Product Designer</p>
                 <ul>
                   <div class="social__media--box">
                     <li>
@@ -397,41 +370,23 @@
           </li>
           <li>
             <figure class="our_team__box">
-              <picture>
-                <source
-                  srcset="
-                    ./images/photo_5mobile@1x,jpg,
-                    ./images/photo_5mobile@x2.jpg
-                  "
-                  type="image"
-                  media="(min-width: 480px)"
-                />
-                <source
-                  srcset="
-                    ./images/photo_5tablet@1x.jpg 1x,
-                    ./images/photo_5tablet@2x.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./imgages/photo_5comp@1x.jpg   1x,
-                    ./imgages/photo_5comp@x2.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 1200px)"
-                />
-              </picture>
               <img
-                src="images/photo_5.jpg"
+              src="./images/photo_5.jpg"
+
+              srcset="
+              ./images/photo_5mobile@1x,jpg 270w,
+              ./images/photo_5mobile@x2.jpg 540w,
+              ./images/photo_5tablet@1x.jpg 354w,
+              ./images/photo_5tablet@2x.jpg 768w,
+              ./imgages/photo_5comp@1x.jpg 450w,
+              ./imgages/photo_5comp@x2.jpg 900w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 765px) 354px, (min-width: 468px) 450px, 98vw"
                 alt="blondynka w okularach"
-                width="270px"
-                height="260px"
               />
               <figcaption>
-                <h4 class="lorem__h4 text_font">Jon Doe</h4>
-                <p class="lorem__p text_font">Frontend Developer</p>
+                <h4 class="our_team__h4 text_font">Jon Doe</h4>
+                <p class="our_team__p text_font">Frontend Developer</p>
                 <ul>
                   <div class="social__media--box">
                     <li>
@@ -505,42 +460,24 @@
           </li>
           <li>
             <figure class="our_team__box">
-              <picture>
-                <source
-                  srcset="
-                    ./images/photo_6mobile@1x,jpg,
-                    ./images/photo_6mobile@x2.jpg
-                  "
-                  type="image"
-                  media="(min-width: 480px)"
-                />
-                <source
-                  srcset="
-                    ./images/photo_6tablet@1x.jpg 1x,
-                    ./images/photo_6tablet@2x.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./imgages/photo_6comp@1x.jpg   1x,
-                    ./imgages/photo_6comp@x2.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 1200px)"
-                />
-              </picture>
+              
               <img
                 src="images/photo_6.jpg"
+                srcset="
+              ./images/photo_6mobile@1x,jpg 270w,
+              ./images/photo_6mobile@x2.jpg 540w,
+              ./images/photo_6tablet@1x.jpg 354w,
+              ./images/photo_6tablet@2x.jpg 768w,
+              ./imgages/photo_6comp@1x.jpg 450w,
+              ./imgages/photo_6comp@x2.jpg 900w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 765px) 354px, (min-width: 468px) 450px, 98vw"
                 alt="szatyn w koszuli"
-                width="270px"
-                height="260px"
               />
 
               <figcaption>
-                <h4 class="lorem__h4 text_font">Jon Doe</h4>
-                <p class="lorem__p text_font">Marketing</p>
+                <h4 class="our_team__h4 text_font">Jon Doe</h4>
+                <p class="our_team__p text_font">Marketing</p>
                 <ul>
                   <div class="social__media--box">
                     <li>
@@ -614,41 +551,23 @@
           </li>
           <li>
             <figure class="our_team__box">
-              <picture>
-                <source
-                  srcset="
-                    ./images/photo_7mobile@1x,jpg,
-                    ./images/photo_7mobile@x2.jpg
-                  "
-                  type="image"
-                  media="(min-width: 480px)"
-                />
-                <source
-                  srcset="
-                    ./images/photo_7tablet@1x.jpg 1x,
-                    ./images/photo_7tablet@2x.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./imgages/photo_7comp@1x.jpg   1x,
-                    ./imgages/photo_7comp@x2.jpg 2x
-                  "
-                  type="image"
-                  media="(min-width: 1200px)"
-                />
-              </picture>
+        
               <img
                 src="images/photo_7.jpg"
+                srcset="
+              ./images/photo_7mobile@1x,jpg 270w,
+              ./images/photo_7mobile@x2.jpg 540w,
+              ./images/photo_7tablet@1x.jpg 354w,
+              ./images/photo_7tablet@2x.jpg 768w,
+              ./imgages/photo_7comp@1x.jpg 450w,
+              ./imgages/photo_7comp@x2.jpg 900w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 765px) 354px, (min-width: 468px) 450px, 98vw"
                 alt="brunet w okularach w t-shircie"
-                width="270px"
-                height="260px"
               />
               <figcaption>
-                <h4 class="lorem__h4 text_font">Jon Doe</h4>
-                <p class="lorem__p text_font">Ul Designer</p>
+                <h4 class="our_team__h4 text_font">Jon Doe</h4>
+                <p class="our_team__p text_font">Ul Designer</p>
                 <ul>
                   <div class="social__media--box">
                     <li>
@@ -722,6 +641,8 @@
           </li>
         </ul>
       </section>
+
+      <!--Clients-->
       <section class="section container">
         <div class="container">
           <h2 class="client__header">Nasi klienci</h2>
@@ -820,7 +741,7 @@
 <!--footer-->
     <footer class="footer footer__container">
       <div class="container footer__flex">
-        <div>
+        <div class="footer__main">
           <p class="footer__nav">
             <a href="index.html"
               ><span class="logo">Web</span
@@ -924,6 +845,12 @@
            </div>
       </div>
     </footer>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
