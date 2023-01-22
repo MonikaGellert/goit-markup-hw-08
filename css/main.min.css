@@ -170,6 +170,7 @@ figure {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer {
+    max-width: 480px;
     background-color: var(--main-background-color);
     color: var(--main-font-color);
     width: 100%;
@@ -181,8 +182,24 @@ figure {
   }
 }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  .footer__main {
+    max-width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .footer__main {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer {
+    max-width: 768px;
     background-color: var(--main-background-color);
     width: 100%;
   }
@@ -200,6 +217,7 @@ figure {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__flex {
+    max-width: 480px;
     flex-wrap: wrap;
     display: wrap;
   }
@@ -207,6 +225,7 @@ figure {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__flex {
+    max-width: 768px;
     display: flex;
   }
 }
@@ -226,7 +245,9 @@ figure {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__container {
+    max-width: 480px;
     width: 100%;
+    max-width: 480px;
   }
 }
 
@@ -249,6 +270,7 @@ figure {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__media {
+    max-width: 480px;
     text-align: center;
     align-items: center;
     padding: 0px;
@@ -258,6 +280,7 @@ figure {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__media {
+    max-width: 768px;
     padding-top: 60px;
     display: flex;
     color: var(--main-font-color-color);
@@ -278,12 +301,14 @@ figure {
 }
 @media (min-width: 480px) and (max-width: 767px) and (max-width: 767px) {
   .footer__nav {
+    max-width: 480px;
     padding-right: 163px;
     padding-left: 163px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__nav {
+    max-width: 768px;
     display: block;
     padding-top: 60px;
   }
@@ -300,12 +325,14 @@ figure {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__address {
+    max-width: 480px;
     justify-content: center;
     display: flex;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__address {
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -319,6 +346,7 @@ figure {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__link {
+    max-width: 480px;
     flex-direction: column;
     align-items: center;
     padding-right: 114px;
@@ -326,6 +354,7 @@ figure {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__link {
+    max-width: 768px;
     display: wrap;
   }
 }
@@ -336,8 +365,9 @@ figure {
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) {
   .footer__social {
+    max-width: 480px;
     text-align: center;
     padding-right: 114px;
   }
@@ -390,12 +420,14 @@ figure {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .footer__social--flex {
+    max-width: 480px;
     display: flex;
     align-items: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__social--flex {
+    max-width: 768px;
     display: none;
     flex-wrap: wrap;
   }
@@ -408,6 +440,7 @@ figure {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .newsletter__box {
+    max-width: 480px;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -856,6 +889,7 @@ Label {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .nav {
+    max-width: 768px;
     visibility: visible;
     margin-right: 46px;
     display: flex;
@@ -961,27 +995,28 @@ Label {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .client__header {
+    max-width: 480px;
     font-size: 28px;
-    justify-content: center;
+    text-align: center;
     display: flex;
     margin: auto 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .client__header {
-    display: flex;
+    max-width: 768px;
+    width: 768px;
+    margin-right: 215px;
     text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .client__header {
     width: 1200px;
-    padding-top: 0;
-    margin: 0 auto 50px auto;
     font-size: 36px;
-    width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;
+    text-align: center;
+    margin-right: 215px;
+    margin-left: 215px;
   }
 }
 .client__list {
@@ -990,6 +1025,7 @@ Label {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .client__list {
+    max-width: 480px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -999,6 +1035,7 @@ Label {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .client__list {
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -1029,12 +1066,14 @@ Label {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .client__box {
+    max-width: 480px;
     width: 210px;
     height: 92px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .client__box {
+    max-width: 768px;
     width: 226px;
     height: 92px;
     display: flex;
@@ -1170,6 +1209,7 @@ Label {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .lorem__container {
+    max-width: 480px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -1380,6 +1420,7 @@ Label {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .our_team__container {
+    max-width: 480px;
     background-color: var(--icone_background);
     flex-direction: column;
     width: 100%;
@@ -1387,6 +1428,7 @@ Label {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .our_team__container {
+    max-width: 768px;
     width: 354px;
     margin-left: 15px;
     background-color: var(--icone_background);
@@ -1416,11 +1458,13 @@ Label {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .our_team__box {
+    max-width: 480px;
     gap: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .our_team__box {
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -1435,6 +1479,7 @@ Label {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .our_team__picture {
+    max-width: 480px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -1443,6 +1488,7 @@ Label {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .our_team__picture {
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -1464,6 +1510,7 @@ Label {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .icons {
+    max-width: 480px;
     justify-content: center;
     display: flex;
   }
@@ -1587,9 +1634,23 @@ Label {
   color: var(--main-underline-color);
 }
 .container {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 767px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 .flex {
   display: flex;
@@ -1610,6 +1671,7 @@ Label {
 }
 @media (max-width: 767px) {
   .li-item {
+    max-width: 480px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -1618,6 +1680,7 @@ Label {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .li-item {
+    max-width: 768px;
     justify-content: left;
     display: flex;
     flex-wrap: wrap;
@@ -1626,6 +1689,7 @@ Label {
 
 @media (min-width: 1200px) {
   .li-item {
+    max-width: 1200px;
     flex-wrap: nowrap;
     display: flex;
     margin: 0 auto;
