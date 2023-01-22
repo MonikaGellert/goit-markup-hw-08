@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -72,7 +73,7 @@
         </div>
         <button type="button" class="btn__menu-mobile" aria-expanded="false" data-menu-button>
         <svg class="icon-menu_40px" width="40" height="40" aria-label="Przełącznik menu">
-          <use class="btn__menu--cross" href="./images/icon.svg#icon-menu_40px"></use>
+          <use class="btn__menu--cross" href="./images/icon.svg#icon-close_40px"></use>
           <use class="btn__menu--burger" href="./images/icon.svg#icon-menu_40px"></use>
         </svg>
       </button>
@@ -286,8 +287,8 @@
         </ul>
       </section>
       <section class="our_team__container section">
-        <h2 class="our_work__header header_2">Nasz zespół</h2>
-        <ul class="our_work__picture container">
+        <h2 class="our_team__header header_2">Nasz zespół</h2>
+        <ul class="our_team__picture container">
           <li>
             <figure class="our_team__box">
               <picture>
@@ -305,7 +306,7 @@
                     ./images/photo_4tablet@2x.jpg 2x
                   "
                   type="image"
-                  media="(min-width: 768px)"
+                  media="(min-width: 768px)" width:450px, height:460px;
                 />
                 <source
                   srcset="
@@ -816,26 +817,26 @@
         </div>
       </section>
     </main>
-
+<!--footer-->
     <footer class="footer footer__container">
-      <div class="container flex">
+      <div class="container footer__flex">
         <div>
-          <p class="footer__logo footer__nav">
+          <p class="footer__nav">
             <a href="index.html"
               ><span class="logo">Web</span
               ><span class="logo__3">Studio</span></a
             >
           </p>
-          <address>Warszawa, Aleje Jerozolimskie 21</address>
+          <address class="footer__address">Warszawa, Aleje Jerozolimskie 21</address>
           <ul class="footer__link">
             <li class="link_2 link__underline">info@example.com</li>
             <li class="link_2">+48 111 111 111</li>
           </ul>
         </div>
         <div class="footer__social">
-          <p class="footer__media footer__logo">Dołącz do nas</p>
+          <p class="footer__media">Dołącz do nas</p>
           <div class="footer__social--box">
-            <ul class="footer__flex">
+            <ul class="footer__social--flex">
               <li>
                 <span>
                   <a class="icon__social" href="https://www.instagram.com/">
